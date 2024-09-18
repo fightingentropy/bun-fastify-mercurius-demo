@@ -1,12 +1,12 @@
 import Fastify from "fastify";
 import Mercurius from "mercurius";
 import fs from "fs";
-import { resolvers } from "./resolvers.js";
+import { resolvers } from "./graphql/resolvers.js";
 
 const fastify = Fastify();
 
 // Read the schema file
-const schema = fs.readFileSync("./schema.graphql", "utf8");
+const schema = fs.readFileSync("./graphql/schema.graphql", "utf8");
 
 // Define a simple route for the root URL
 fastify.get("/", async (request, reply) => {
