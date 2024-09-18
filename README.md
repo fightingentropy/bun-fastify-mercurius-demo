@@ -48,7 +48,7 @@ This combination offers a balance of speed, developer productivity, and scalabil
 ## Project Structure
 
 - `index.js`: Main server file
-- `schema.graphql`: GraphQL schema definition
-- `resolvers.js`: GraphQL resolvers
+- `graphql/schema.graphql`: GraphQL schema definition
+- `graphql/resolvers.js`: GraphQL resolvers
 - `prisma/schema.prisma`: Prisma schema file
 - `package.json`: Project configuration and dependencies

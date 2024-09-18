@@ -21,7 +21,7 @@ fastify.register(Mercurius, {
 });
 
 // Start the Fastify server
-fastify.listen({ port: 3000 }, (err, address) => {
+fastify.listen({ port: 3000 }, (err, addr) => {
   if (err) {
     console.error(err);
     process.exit(1);
