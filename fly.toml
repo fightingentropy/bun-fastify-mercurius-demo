@@ -8,7 +8,7 @@ app = "bun-fastify-mercurius-demo"
 primary_region = 'lhr'
 
 [build]
-  dockerfile = "Dockerfile"
+  builder = "nixpacks"
 
 [[mounts]]
   source = 'data'
