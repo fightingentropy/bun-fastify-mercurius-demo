@@ -17,7 +17,7 @@
   },
   "scripts": {
     "prebuild": "prisma generate",
-    "start": "bun run index.js",
+    "start": "node server.js",
     "dev": "bun --watch run index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev"
