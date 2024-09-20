@@ -2,16 +2,15 @@ import Fastify from "fastify";
 import Mercurius from "mercurius";
 import fs from "fs";
 import { resolvers } from "./graphql/resolvers.js";
+import routes from "./routes.js";
 
 const fastify = Fastify();
 
 // Read the schema file
 const schema = fs.readFileSync("./graphql/schema.graphql", "utf8");
 
-// Define a simple route for the root URL
-fastify.get("/", async (request, reply) => {
-  return { message: "Welcome to Fastify and GraphQL with Bun!" };
-});
+// Register routes
+fastify.register(routes);
 
 // Register Mercurius with Fastify for GraphQL
 fastify.register(Mercurius, {
