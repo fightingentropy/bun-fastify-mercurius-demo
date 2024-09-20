@@ -3,6 +3,7 @@
   "module": "index.js",
   "type": "module",
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.8",
     "@types/bun": "latest",
     "prisma": "^5.0.0"
   },
