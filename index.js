@@ -20,10 +20,9 @@ fastify.register(Mercurius, {
 });
 
 // Start the Fastify server
-fastify.listen({ port: 3000 }, (err, addr) => {
+fastify.listen({ port: process.env.PORT || 3000 }, (err, addr) => {
   if (err) {
     console.error(err);
-    process.exit(1);
   }
   console.log(`Server running at http://localhost:3000`);
 });
