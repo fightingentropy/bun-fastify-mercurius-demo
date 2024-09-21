@@ -3,7 +3,6 @@
   "module": "index.js",
   "type": "module",
   "devDependencies": {
-    "@flydotio/dockerfile": "^0.5.8",
     "@types/bun": "latest",
     "prisma": "^5.0.0"
   },
@@ -16,7 +15,6 @@
     "mercurius": "^15.0.0"
   },
   "scripts": {
-    "prebuild": "prisma generate",
     "start": "node server.js",
     "dev": "bun --watch run index.js",
     "prisma:generate": "prisma generate",
