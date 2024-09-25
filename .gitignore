@@ -11,6 +11,8 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 
+bun.lockb
+
 # Caches
 
 .cache
